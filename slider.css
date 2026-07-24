@@ -86,13 +86,14 @@ header {
    pointer-events: none;
 }
 #controls label {
+   margin: 0 auto;
    position: absolute;
    top: 50%;
    transform: translateY(-50%);
    transition: opacity 0.2s ease-out;
    display: none;
-   width: 50px;
-   height: 50px;
+   width: max(50px);
+   height: max(50px);
    opacity: .9;
    pointer-events: auto;
    border-radius: 0;
@@ -158,4 +159,78 @@ header {
       max-width: calc(100% - 140px);
       margin: 0 auto;
    }
+}
+/* Mobil */
+@media screen and (max-width: 768px) {
+
+    header {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    #slider {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #slides .inner {
+        height: 200px;
+    }
+
+    #controls {
+        height: 200px;
+    }
+
+    #controls label {
+        width: 40px;
+        height: 40px;
+        background-size: 18px 18px;
+    }
+
+    #slides {
+        max-width: 100%;
+    }
+
+    #site-logo {
+        width: 80px;
+        margin-bottom: 15px;
+    }
+
+    #bullets label {
+        width: 8px;
+        height: 8px;
+        margin: 0 6px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    iframe {
+        max-width: 100%;
+    }
+}
+
+/* Extra små mobiler */
+@media screen and (max-width: 480px) {
+
+    #slides .inner {
+        height: 160px;
+    }
+
+    #controls {
+        height: 160px;
+    }
+
+    #controls label {
+        width: 34px;
+        height: 34px;
+        background-size: 16px 16px;
+    }
+
+    #site-logo {
+        width: 65px;
+    }
+
 }
