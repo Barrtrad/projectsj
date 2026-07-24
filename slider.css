@@ -37,6 +37,7 @@ header {
    width: 100%;
    overflow: hidden;
      border-radius: 10px;
+     border: 2px solid #ffffff;
 }
 #slide1:checked ~ #slides .inner {
    margin-left: 0;
@@ -66,8 +67,9 @@ header {
    color: #fff;
 }
 #slides .slide_1 {
-   background: #00171F;}
-#slides .slide_2 {
+   background-image: url('https://cdn.discordapp.com/attachments/1318607369168621638/1530216465699967016/Untitled_-_24_juli_2026_kl._15.51.55_1.png?ex=6a64c4a3&is=6a637323&hm=f1a9d2f0c9e10cba6579ea9248b8495df06c334babb6feb9467d1140429678b0&=&format=webp&quality=lossless&width=838&height=838');
+}
+   #slides .slide_2 {
    background: #003459;
 }
 #slides .slide_3 {
@@ -233,6 +235,36 @@ header {
         width: 65px;
     }
 
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #slides .slide {
+        font-size: 0.85rem;
+    }
+
+    #slides .slide h1 {
+        font-size: 1.8rem;
+    }
+
+    #slides .slide h2 {
+        font-size: 1.4rem;
+    }
+
+    #slides .slide p {
+        font-size: 0.9rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
